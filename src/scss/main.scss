@@ -1,0 +1,51 @@
+@use "mixins";
+@use "variables" as var;
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+.welcomePage {
+  @include mixins.firstPage;
+
+  @include mixins.tablet {
+    h1 {
+      font-size: 3em;
+    }
+  }
+}
+
+nav {
+  @include mixins.nav;
+
+  @include mixins.tablet {
+    ul {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.typewriter h2 {
+  @include mixins.typeAnimation;
+}
+
+//typing ainmationen
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  45% {
+    border-color: rgb(204, 38, 141);
+  }
+}
