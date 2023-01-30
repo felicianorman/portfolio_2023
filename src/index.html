@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
 
@@ -32,8 +32,8 @@
     <header>
       <nav class="top-nav">
         <ul>
-          <li><a href="#">Hem</a></li>
-          <li><a href="#">Om</a></li>
+          <li><a href="#home">Hem</a></li>
+          <li><a href="#aboutme">Om</a></li>
           <li><a href="#">Projekt</a></li>
           <li><a href="#">Kontakt</a></li>
         </ul>
@@ -42,13 +42,26 @@
 
     <main>
       <!-- Första Sidan-->
-      <section class="welcomePage">
+      <section class="welcomePage" id="home">
         <article class="welcomePage--text">
           <h1>&#60;felicia norman/&#62;</h1>
           <div class="typewriter">
             <h2 class="welcomePage--text__sub">frontend developer</h2>
           </div>
         </article>
+      </section>
+
+      <!-- Om mig-->
+      <section class="aboutMe" id="aboutme">
+        <div class="aboutMe--container">
+          <article class="aboutMe--text">
+            <h2>Om mig</h2>
+            <p>Jag studerar till Frontend Developer på Medieinstitutet. Jag älskar att sitta och koda i timmar i JavaScript, och doppar även tårna i backend just nu. </p>
+          </article>
+          <article class="aboutMe--img">
+            <img src="assets/meBW.jpg" alt="self portrait" />
+          </article>
+        </div>
       </section>
     </main>
   </body>

@@ -26,11 +26,19 @@ nav {
   }
 }
 
+.aboutMe {
+  @include mixins.aboutMePage;
+
+  @include mixins.tablet {
+    justify-content: flex-start;
+  }
+}
+
+//typing animationen
 .typewriter h2 {
   @include mixins.typeAnimation;
 }
 
-//typing ainmationen
 @keyframes typing {
   from {
     width: 0;
