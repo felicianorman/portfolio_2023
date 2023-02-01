@@ -109,3 +109,27 @@ nav {
   color: rgb(250, 247, 247);
   font-size: 0.9em;
 }
+
+footer {
+  background-color: var.$accent-color;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h2 {
+    margin: 0;
+  }
+
+  .icons {
+    display: flex;
+    font-size: 2.9em;
+    gap: 10px;
+    
+
+    a {
+      color: var.$bg-color;
+    }
+  }
+}
