@@ -1,8 +1,15 @@
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.navbar--menu');
+import axios from "axios";
 
-hamburger?.addEventListener("click", () => {
-    console.log("Hej");
-    hamburger.classList.add("active");
-    navMenu?.classList.add("active");
-})
+axios
+  .get("https://api.github.com/users/felicianorman/repos")
+  .then((response) => {
+    createHTML(response.data);
+  });
+
+function createHTML(github) {
+  console.log(github[1]);
+
+  let bookAPIh2 = document.getElementById("graphQL_h2") as HTMLHeadingElement;
+  bookAPIh2.innerHTML = github[1].name;
+
+}

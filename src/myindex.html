@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="scss/main.scss" rel="stylesheet" />
+    <script src="ts/main.ts" type="module" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/3dcdd4a12d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Felicia Norman</title>
+  </head>
+  <body>
+    <header>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="#aboutme">Om</a></li>
+          <li><a href="#projects">Projekt</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+        <div class="icon">
+          <a href="#home"><i class="fa-solid fa-cat"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Första Sidan-->
+      <section class="welcomePage" id="home">
+        <article class="welcomePage--text">
+          <h1>&#60;felicia norman/&#62;</h1>
+          <div class="typewriter">
+            <h2 class="welcomePage--text__sub">frontend developer</h2>
+          </div>
+        </article>
+      </section>
+
+      <!-- Om mig-->
+      <section class="aboutMe" id="aboutme">
+        <div class="aboutMe--container">
+          <article class="aboutMe--text">
+            <h2>Om mig</h2>
+            <p>
+              Jag studerar till Frontend Developer på Medieinstitutet. Jag
+              älskar att sitta och koda i timmar i JavaScript, och doppar även
+              tårna i backend just nu.
+            </p>
+          </article>
+          <article class="aboutMe--img">
+            <img src="assets/meBW.jpg" alt="self portrait" />
+          </article>
+        </div>
+      </section>
+
+      <!-- Projekt-->
+      <section class="projects" id="projects">
+        <h1>Projekt</h1>
+        <div class="projects--container">
+          <article class="graphql project">
+            <h2 id="graphQL_h2"></h2>
+            <img src="assets/bookapi.png" />
+            <p class="projects--text">
+              bookAPI är ett fullstack projekt byggt med GraphQL och JavaScript.
+              Datan hämtas från ett Google Sheet med hjälp av SheetDB, och för
+              GraphQL används Apollo Server. <br /><br />
+              <a href="#">Github</a> <br><a href="#">Testa live</a>
+            </p>
+
+            <div class="stack">
+              <span class="tech">JavaScript</span>
+              <span class="tech">GraphQL</span>
+              <span class="tech">CSS</span>
+            </div>
+          </article>
+
+          <article class="memory project">
+            <h2>Dog Memory</h2>
+            <img src="assets/memorygame.png" />
+            <p class="projects--text">
+              Dog Memory är ett memoryspel med bilder på min lilla hund Loke,
+              byggt med TypeScript och SCSS. <br /><br />
+              <a href="#">Github</a><br>
+              <a
+                href="https://felicianorman.github.io/memorygame/"
+                target="blank"
+                >Testa live</a
+              >
+            </p>
+            <div class="stack">
+              <span class="tech">TypeScript</span>
+              <span class="tech">SCSS</span>
+            </div>
+          </article>
+
+          <article class="webshop project">
+            <h2>Webshop</h2>
+            <img src="assets/webbshop.png" />
+            <p class="projects--text">
+              Webshop är ett skolarbete, där vi tillsammans i grupp skulle skapa en webshop som skulle simulera ett köp.<br><br>
+              <a href="#">Github</a><br>
+              <a
+                href="https://felicianorman.github.io/memorygame/"
+                target="blank"
+                >Testa live</a>
+            </p>
+            <div class="stack">
+              <span class="tech">TypeScript</span>
+              <span class="tech">SCSS</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

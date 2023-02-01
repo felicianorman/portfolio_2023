@@ -1,6 +1,10 @@
 @use "mixins";
 @use "variables" as var;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   position: relative;
@@ -20,6 +24,9 @@ nav {
   @include mixins.nav;
 
   @include mixins.tablet {
+    nav {
+      justify-content: space-evenly;
+    }
     ul {
       justify-content: flex-start;
     }
@@ -31,6 +38,27 @@ nav {
 
   @include mixins.tablet {
     justify-content: flex-start;
+  }
+}
+
+.projects {
+  @include mixins.projectsPage;
+
+  @include mixins.tablet {
+    .projects--container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .project {
+      width: 40%;
+      height: 770px;
+
+      img {
+        height: auto;
+      }
+    }
   }
 }
 
@@ -56,4 +84,28 @@ nav {
   45% {
     border-color: rgb(204, 38, 141);
   }
+}
+
+.icon {
+  position: relative;
+}
+.fa-cat {
+  position: absolute;
+  left: -50px;
+  color: var.$accent-color;
+  font-size: 2em;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+.tech {
+  font-family: "Source Code Pro", monospace;
+  background-color: var.$accent-color;
+  border: 4px solid var.$accent-color;
+  border-radius: 20px;
+  color: rgb(250, 247, 247);
+  font-size: 0.9em;
 }
