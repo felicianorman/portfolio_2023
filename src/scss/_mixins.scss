@@ -61,7 +61,7 @@
   h1 {
     margin: 0;
     font-family: "Source Code Pro", monospace;
-    font-size: 2.5em;
+    font-size: 2em;
     color: rgb(204, 38, 141);
   }
 
@@ -150,6 +150,16 @@
       color: var.$bg-color;
       width: 90%;
     }
+
+    a {
+      color: var.$bg-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        color: var.$accent-color;
+      }
+    }
   }
 
   h2 {
@@ -186,9 +196,10 @@
 
   a {
     color: white;
+    text-decoration: none;
 
     &:hover {
-      background-color: green;
+      text-decoration: underline;
     }
   }
 }
