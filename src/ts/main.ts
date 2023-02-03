@@ -11,5 +11,4 @@ function createHTML(github) {
 
   let bookAPIh2 = document.getElementById("graphQL_h2") as HTMLHeadingElement;
   bookAPIh2.innerHTML = github[1].name;
-
 }

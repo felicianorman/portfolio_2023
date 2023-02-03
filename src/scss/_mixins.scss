@@ -20,7 +20,7 @@
   font-family: "Source Code Pro", monospace;
   width: 100%;
   position: fixed;
-  height: 50px;
+  height: 85px;
 
   ul {
     margin: 0;
@@ -38,6 +38,16 @@
     &:hover {
       border-bottom: 1px solid var.$accent-color;
     }
+  }
+}
+
+@mixin logo {
+  position: relative;
+  img {
+    width: 80px;
+    position: absolute;
+    left: -120px;
+    top: -20px;
   }
 }
 @mixin firstPage {
@@ -97,7 +107,7 @@
     display: flex;
     justify-content: center;
     img {
-      width: 60%;
+      width: 50%;
       border: none;
       border-radius: 50%;
     }
@@ -123,7 +133,6 @@
     margin: 20px;
     box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.5);
   }
-
 
   .project {
     display: flex;
@@ -157,6 +166,51 @@
   }
 }
 
+@mixin techStack {
+  font-family: "Source Code Pro", monospace;
+  background-color: var.$accent-color;
+  border: 4px solid var.$accent-color;
+  border-radius: 20px;
+  color: rgb(250, 247, 247);
+  font-size: 0.9em;
+}
+
+@mixin contactMe {
+  background-color: var.$accent-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  text-align: center;
+  font-size: 1.5em;
+
+  a {
+    color: white;
+
+    &:hover {
+      background-color: green;
+    }
+  }
+}
+
+@mixin footer {
+  background-color: var.$bg-color;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .icons {
+    display: flex;
+    font-size: 2.9em;
+    gap: 10px;
+
+    a {
+      color: var.$accent-color;
+    }
+  }
+}
 @mixin typeAnimation {
   overflow: hidden;
   border-right: 0.15em solid rgb(204, 38, 141);

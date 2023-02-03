@@ -14,6 +14,19 @@
       rel="stylesheet"
     />
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,15 +42,15 @@
     <title>Felicia Norman</title>
   </head>
   <body>
-    <header>
+   
       <nav class="top-nav">
         <ul>
           <li><a href="#aboutme">Om</a></li>
           <li><a href="#projects">Projekt</a></li>
           <li><a href="#contact">Kontakt</a></li>
         </ul>
-        <div class="icon">
-          <a href="#home"><i class="fa-solid fa-cat"></i></a>
+        <div class="logo">
+          <a href="#home"><img src="assets/logga.png"></a>
         </div>
       </nav>
     </header>
@@ -59,7 +72,14 @@
           <article class="aboutMe--text">
             <h2>Om mig</h2>
             <p>
-              Jag studerar till Frontend Developer på Medieinstitutet. Programmering började som en hobby för mig, så att ta steget att börja studera var ett enkelt val. Jag älskar att koda i TypeScript - vilket reflekteras i antalet egna projekt jag har på Github. <br><br> Jag har även börjat få upp ögonen för backend efter vår kurs i API-utveckling, så jag experimenterar just nu en del med GraphQL och MongoDB.
+              Jag studerar till Frontend Developer på Medieinstitutet.
+              Programmering började som en hobby för mig, så att ta steget att
+              börja studera var ett enkelt val. Jag älskar att koda i TypeScript
+              - vilket reflekteras i antalet egna projekt jag har på Github.
+              <br /><br />
+              Jag har även börjat få upp ögonen för backend efter vår kurs i
+              API-utveckling, så jag experimenterar just nu en del med GraphQL
+              och MongoDB.
             </p>
           </article>
           <article class="aboutMe--img">
@@ -79,7 +99,7 @@
               bookAPI är ett fullstack projekt byggt med GraphQL och JavaScript.
               Datan hämtas från ett Google Sheet med hjälp av SheetDB, och för
               GraphQL används Apollo Server. <br /><br />
-              <a href="#">Github</a> <br><a href="#">Testa live</a>
+              <a href="#">Github</a> <br /><a href="#">Testa live</a>
             </p>
 
             <div class="stack">
@@ -95,7 +115,7 @@
             <p class="projects--text">
               Dog Memory är ett memoryspel med bilder på min lilla hund Loke,
               byggt med TypeScript och SCSS. <br /><br />
-              <a href="#">Github</a><br>
+              <a href="#">Github</a><br />
               <a
                 href="https://felicianorman.github.io/memorygame/"
                 target="blank"
@@ -112,12 +132,14 @@
             <h2>Webshop</h2>
             <img src="assets/webbshop.png" />
             <p class="projects--text">
-              Webshop är ett skolarbete, där vi tillsammans i grupp skulle skapa en webshop som skulle simulera ett köp.<br><br>
-              <a href="#">Github</a><br>
+              Webshop är ett skolarbete, där vi tillsammans i grupp skulle skapa
+              en webshop som skulle simulera ett köp.<br /><br />
+              <a href="#">Github</a><br />
               <a
                 href="https://felicianorman.github.io/memorygame/"
                 target="blank"
-                >Testa live</a>
+                >Testa live</a
+              >
             </p>
             <div class="stack">
               <span class="tech">TypeScript</span>
@@ -126,13 +148,24 @@
           </article>
         </div>
       </section>
-
+      <section id="contact" class="contact">
+        <p>
+          Jag nås via
+          <a href="mailto: felicia.norman@medieinstitutet.se">mail</a> eller
+          Linkedin. 
+        </p>
+      </section>
     </main>
-    <footer class="contact" id="contact">
-      <p>Jag nås via <a href="mailto: felicia.norman@medieinstitutet.se">mail</a> eller Linkedin. <br>Hoppas vi hörs!</p>
+    <footer>
       <div class="icons">
-        <a href="https://www.linkedin.com/in/felicia-norman-1b8a15152/" title="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/felicianorman/bookAPI" title="github"><i class="fa-brands fa-square-github"></i></a>
+        <a
+          href="https://www.linkedin.com/in/felicia-norman-1b8a15152/"
+          title="linkedin"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/felicianorman/bookAPI" title="github"
+          ><i class="fa-brands fa-square-github"></i
+        ></a>
       </div>
     </footer>
   </body>
